@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
-    <title>Travel Website</title>
+    <title>MyTravel Website</title>
 </head>
 <body>
     <!-- header section-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Travel Web</a>
+            <a href="#" class="nav__logo">MyTravel Web</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link active-link">Home</a>
                     </li>
 
                     <li class="nav__item">
@@ -107,8 +107,8 @@
             <div class="about__container container grid">
                 <div class="about__data">
                     <h2 class="section__title">
-                        Learn More <br>
-                        About Travel
+                        About <br>
+                        MyTravel
                     </h2>
 
                     <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corporis aliquid, facilis mollitia error fuga ipsum voluptas suscipit. Reprehenderit maxime, commodi assumenda inventore, dolor eligendi, nulla ut incidunt quia sunt voluptates aperiam itaque. Reiciendis, et ipsum.</p>
@@ -166,7 +166,7 @@
                     </div>
 
                     <h2 class="popular__title">
-                        Tokyo
+                        Tokyo City
                     </h2>
 
                     <div class="popular__location">
@@ -210,19 +210,169 @@
 
         <!-- explore Section -->
         <section class="explore section" id="explore">
+            <div class="explore__container container grid">
+                <div class="explore__image">
+                    <img src="asset/explore-img.jpg" alt="explore image" class="explore__img">
+                    <div class="explore__shadow"></div>
+                </div>
+            </div>
+
+            <div class="explore__content container grid">
+                <div class="explore__data">
+                    <h2 class="section__title">
+                        Explore The<br>
+                        Best Paradise
+                    </h2>
+                    <p class="explore__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nihil nobis culpa porro nulla totam aut ad eum rerum, id possimus facere, ullam amet fugit delectus! Ipsam, debitis culpa repudiandae voluptatibus voluptates a maxime dolorum eveniet.
+                    </p>
+                </div>
+
+                <div class="explore__user">
+                    <img src="asset/profile1.jpg" alt="explore image" class="explore__perfil">
+                    <span class="explore__name">Stefany Agatha</span>
+                </div>
+            </div>
         </section>
 
+        <!-- join section -->
+        <section class="join section">
+            <div class="join__container container grid">
+                <div class="join__data">
+                    <h2 class="section__title">
+                        Your Journey <br>
+                        Starts Here
+                    </h2>
+
+                    <p class="join__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas odit in odio nihil!
+                    </p>
+
+                    <form action="" class="join__form">
+                        <input type="email" placeholder="Your Email" class="join__input">
+                        <button class="join__button button">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+                <div class="join__image">
+                    <img src="asset/about-img.jpg" alt="join image" class="join__img">
+                    <div class="join__shadow"></div>
+                </div>
+            </div>
+        </section>
     </main>
-
-
-
 
     <!-- footer section -->
     <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div>
+                    <a href="#" class="footer__logo">MyTravel Web</a>
+                    <p class="footer__description">
+                        Travel with us and explore<br>
+                        the world without limit
+                    </p>
+                </div>
 
+                <div class="footer__data grid">
+                    <!-- #1 -->
+                    <div>
+                        <h3 class="footer__title">About</h3>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Features</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">News And Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- #2 -->
+                    <div>
+                        <h3 class="footer__title">Company</h3>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">History</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- #3 -->
+                    <div>
+                        <h3 class="footer__title">Contact</h3>
+                        <ul class="footer__links">    
+                            <li>
+                                <a href="#" class="footer__link">Call Center</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Support Center</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- #4 -->
+                    <div>
+                        <h3 class="footer__title">Support</h3>
+                        <ul class="footer__links">    
+                            <li>
+                                <a href="#" class="footer__link">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Term & Service</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Payments</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer__group">
+                <div class="footer__social">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-line"></i>
+                    </a>
+
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-youtube-line"></i>
+                    </a>
+                </div>
+
+                <span class="footer__copy">
+                    &#169;2024 Copyright Tongky. All rights reserved
+                </span>
+
+            </div>
+
+        </div>
     </footer>
+    <!-- Scroll Up -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
 <!-- js -->
-    <script src=""></script>
-    <script src="js/script.js"></script>
+    <script src="JS/scrollreveal.min.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>
