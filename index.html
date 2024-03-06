@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
     <title>MyTravel Website</title>
@@ -12,26 +13,20 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">MyTravel Web</a>
-
             <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    
+                <ul class="nav__list">    
                     <li class="nav__item">
                         <a href="#home" class="nav__link active-link">Home</a>
                     </li>
-
                     <li class="nav__item">
                         <a href="#about" class="nav__link">About</a>
                     </li>
-
                     <li class="nav__item">
                         <a href="#popular" class="nav__link">Popular</a>
                     </li>
-
                     <li class="nav__item">
                         <a href="#explore" class="nav__link">Explore</a>
-                    </li>
-                
+                    </li>             
                 </ul>
 
                 <!-- close button -->
@@ -75,25 +70,25 @@
                 </div>
                 <div class="home__cards grid">
 
-                    <article class="home__card">
+                    <article class="home__card" data-aos="zoom-out" data-aos-duration="1200">
                         <img src="asset/home-card3.jpg" alt="home image" class="home__card-img">
                         <h3 class="home__card-title">Roma</h3>
                         <div class="home__card-shadow"></div>
                     </article>
 
-                    <article class="home__card">
+                    <article class="home__card" data-aos="zoom-out" data-aos-duration="1200">
                         <img src="asset/home-card2.jpg" alt="home image" class="home__card-img">
                         <h3 class="home__card-title">Tokyo</h3>
                         <div class="home__card-shadow"></div>
                     </article>
 
-                    <article class="home__card">
+                    <article class="home__card" data-aos="zoom-out" data-aos-duration="1200">
                         <img src="asset/home-card4.jpg" alt="home image" class="home__card-img">
                         <h3 class="home__card-title">Bali</h3>
                         <div class="home__card-shadow"></div>
                     </article>
 
-                    <article class="home__card">
+                    <article class="home__card" data-aos="zoom-out" data-aos-duration="1200">
                         <img src="asset/home-card1.jpg" alt="home image" class="home__card-img">
                         <h3 class="home__card-title">Paris</h3>
                         <div class="home__card-shadow"></div>
@@ -118,7 +113,7 @@
                     </a>
                 </div>
 
-                <div class="about__image">
+                <div class="about__image" data-aos="flip-left" data-aos-duration="2000">
                     <img src="asset/about-img.jpg" alt="about image" class="about__img">
                     <div class="about__shadow"></div>
                 </div>
@@ -142,80 +137,79 @@
         
 
             <div class="popular__container container grid">
-                <article class="popular__card">
+                <article class="popular__card" data-aos="zoom-in-up" data-aos-duration="1200">
                     <div class="popular__image">
                         <img src="asset/popular1.jpg" alt="popular image" class="popular__img">
                         <div class="popular__shadow"></div>
                     </div>
-                    <h2 class="popular__title">Bali</h2>
-                    <div class="popular__location">
-                        <i class="ri-map-pin-line"></i>
-                        <span>Indonesia</span>
+
+                    <div class="popular__data">
+                        <h2 class="popular__title">Bali</h2>
+                        <div class="popular__location">
+                            <i class="ri-map-pin-line"></i>
+                            <span>Indonesia</span>
+                        </div>
+                        <div class="popular__rating">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <span>(418)</span>
+                        </div>    
                     </div>
-                    <div class="popular__rating">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <span>(418)</span>
-                    </div>
-                    <div class="detail__card">
+                    <div class="popular__button">
                         <a href="#" class="detail__button button">Details Package</a>
-                        <a href="#" class="detail__button button">
-                            <i class="ri-shopping-cart-2-line"></i>
-                        </a>
                     </div>
                 </article>
                 
-                <article class="popular__card">
+                <article class="popular__card" data-aos="zoom-in-up" data-aos-duration="1200">
                     <div class="popular__image">
                         <img src="asset/home-card2.jpg" alt="popular image" class="popular__img">
                         <div class="popular__shadow"></div>
                     </div>
-                    <h2 class="popular__title">Tokyo City</h2>
-                    <div class="popular__location">
-                        <i class="ri-map-pin-line"></i>
-                        <span>Japan</span>
+
+                    <div class="popular__data">
+                        <h2 class="popular__title">Tokyo City</h2>
+                        <div class="popular__location">
+                            <i class="ri-map-pin-line"></i>
+                            <span>Japan</span>
+                        </div>
+                        <div class="popular__rating">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <span>(215)</span>
+                        </div>
                     </div>
-                    <div class="popular__rating">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <span>(215)</span>
-                    </div>
-                    <div class="detail__card">
+                    <div class="popular__button">
                         <a href="#" class="detail__button button">Details Package</a>
-                        <a href="#" class="detail__button button">
-                            <i class="ri-shopping-cart-2-line"></i>
-                        </a>
                     </div>
                 </article>
 
-                <article class="popular__card">
+                <article class="popular__card" data-aos="zoom-in-up" data-aos-duration="1200">
                     <div class="popular__image">
                         <img src="asset/popular3.jpg" alt="popular image" class="popular__img">
                         <div class="popular__shadow"></div>
                     </div>
-                    <h2 class="popular__title">Vienna</h2>
-                    <div class="popular__location">
-                        <i class="ri-map-pin-line"></i>
-                        <span>Austria</span>
-                    </div>
-                    <div class="popular__rating">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <span>(115)</span>
+                    <div class="popular__data">
+                        <h2 class="popular__title">Vienna</h2>
+                        <div class="popular__location">
+                            <i class="ri-map-pin-line"></i>
+                            <span>Austria</span>
+                        </div>
+                        <div class="popular__rating">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <span>(115)</span>
+                        </div>
                     </div>
 
-                    <div class="detail__card">
+                    <div class="popular__button">
                         <a href="#" class="detail__button button">Details Package</a>
-                        <a href="#" class="detail__button button">
-                            <i class="ri-shopping-cart-2-line"></i>
-                        </a>
                     </div>
                 </article>
 
@@ -290,7 +284,7 @@
                     <a href="#" class="footer__logo">MyTravel Web</a>
                     <p class="footer__description">
                         Travel with us and explore<br>
-                        the world without limit. 
+                        the world without limit.
                     </p>
                 </div>
 
@@ -378,7 +372,7 @@
                 </div>
 
                 <span class="footer__copy">
-                    &#169;2024 Copyright Tongky. All rights reserved
+                    &#169;2024 Tongky. All rights reserved
                 </span>
 
             </div>
@@ -390,7 +384,12 @@
         <i class="ri-arrow-up-line"></i>
     </a>
 
-<!-- js -->
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- js -->
     <script src="JS/script.js"></script>
 </body>
 </html>
