@@ -67,3 +67,21 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive);
 
+// MODAL
+// ===== MODAL ===== 
+const modalButton = document.querySelectorAll('.detail__button');
+const modal = document.getElementById('modal');
+
+// ==Show-modal
+modalButton.forEach(m => m.addEventListener('click', function(){
+    modal.style.display = 'block';
+}) )
+
+
+// ==Close when anywhere user click outside modal
+window.onclick = function(event){
+    if (event.target == modal){
+        modal.style.display = 'none';
+    }
+}    
+
